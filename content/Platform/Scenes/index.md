@@ -1,0 +1,3 @@
+Scenes in Godot are described as simply a reusable tree of nodes. Anything from whole levels to environment objects are defined as scenes. Other game engines typically make a seperation of this concept to abstract the logic needed to handle larger game phases v.s. smaller reusable assets.
+
+In this project I attempt at a similar separation of this concept for what I define as **Views** and **Templates**.

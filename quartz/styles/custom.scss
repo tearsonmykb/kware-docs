@@ -1,3 +1,61 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+.breadcrumb-element {
+  a {
+    color: #ff004c;
+  }
+}
+
+.breadcrumb-container {
+    margin-top: 6px;
+}
+
+.page-title {
+  a {
+    color: #ff004c;
+  }
+}
+
+.explorer.collapsed {
+    flex: 0 2rem;
+}
+
+.popover-hint {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  row-gap: 1.2rem;          /* Sets a 15px vertical space between items */
+}
+
+.article-title {
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.content-meta {
+    color: #6b6b6b;
+    margin-bottom: 0px;
+    margin-top: -20px;
+    border-bottom: 1px solid #ff004c;
+    display: flex;
+    align-items: center
+}
+
+.section {
+    display: flex;
+    align-items: center
+}
+
+.internal {
+    color: #ff004c;
+}
+
+.explorer-content {
+    margin-top: 0px;
+}
+
+.title-button.explorer-toggle.desktop-explorer {
+    border-top: 1px solid #ff004c;
+    margin-top: 4.5px;
+    padding-top: 20px;
+}
