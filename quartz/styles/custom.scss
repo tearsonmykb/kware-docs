@@ -1,20 +1,7 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
-.breadcrumb-element {
-  a {
-    color: #ff004c;
-  }
-}
-
 .breadcrumb-container {
     margin-top: 6px;
-}
-
-.page-title {
-  a {
-    color: #ff004c;
-  }
 }
 
 .explorer.collapsed {
@@ -23,20 +10,26 @@
 
 .popover-hint {
   display: flex;
-  flex-direction: column; /* Stacks items vertically */
-  row-gap: 1.2rem;          /* Sets a 15px vertical space between items */
+  flex-direction: column;
+  row-gap: 1.2rem;
+}
+
+.breadcrumb-container + .article-title {
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 .article-title {
-    margin-top: 4px;
+    margin-top: 51.5px;
     margin-bottom: 0px;
 }
 
 .content-meta {
-    color: #6b6b6b;
+    color: #5b5b5b;
     margin-bottom: 0px;
-    margin-top: -20px;
-    border-bottom: 1px solid #ff004c;
+    margin-top: -21.5px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--secondary);
     display: flex;
     align-items: center
 }
@@ -46,8 +39,40 @@
     align-items: center
 }
 
-.internal {
-    color: #ff004c;
+.section-ul {
+    margin-top: -24px;
+    margin-bottom: 0px;
+}
+
+.section-li {
+    height: 42px;
+}
+
+.page-listing {
+    border-bottom-color: rgb(51, 51, 51);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-width: 0px;
+    border-left-color: rgb(51, 51, 51);
+    border-left-width: 0px;
+    border-right-color: rgb(51, 51, 51);
+    border-right-width: 0px;
+    border-top-color: rgb(51, 51, 51);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: solid;
+    border-top-width: 1.25px;
+    // p {
+    //     margin-top: 8px;
+    // }
+}
+
+.page-listing > p {
+    margin-top: 8px;
+}
+
+hr {
+    margin-top: 20px;
 }
 
 .explorer-content {
@@ -55,7 +80,19 @@
 }
 
 .title-button.explorer-toggle.desktop-explorer {
-    border-top: 1px solid #ff004c;
+    border-top: 1px solid var(--secondary);
     margin-top: 4.5px;
     padding-top: 20px;
 }
+
+.explorer.nav-files-container.collapsed {
+    flex: 0 3.25rem;
+}
+
+// .toc-header {
+//     margin-top: -20px;
+// }
+
+// .toc-content.overflow {
+//     margin-top: 0px;
+// }
